@@ -70,16 +70,16 @@ iframe {
 }
 
 .custom-link {
-    text-decoration: none; /* Removes underline */
-    color: #ffffff; /* Set your desired color (e.g., blue) */
+    text-decoration: none; 
+    color: #ffffff;
 }
 
 .custom-link:visited {
-    color: #ffffff; /* Same color for visited links */
+    color: #ffffff; 
 }
 
 .custom-link:hover,
 .custom-link:active {
-    color: #06559e; /* Same color for hover and active states */
+    color: #06559e; 
     text-decoration: none; /* Ensure no underline on hover */
 }
