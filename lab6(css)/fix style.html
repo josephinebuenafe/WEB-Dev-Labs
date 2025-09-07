@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Styles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .message {
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 2px solid #28a745;
+        }
+
+        .warning {
+            background-color: #fff3cd;
+            color: #856404;
+            border: 2px solid #ffc107;
+        }
+
+        .info {
+            background-color: #d1ecf1;
+            color: #0c5460;
+            border: 2px solid #17a2b8;
+        }
+
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 2px solid #dc3545;
+        }
+
+        h2 {
+            margin-top: 0;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="message success">
+        <h2>Operation Successful</h2>
+        <p>The process completed successfully and all changes have been saved.</p>
+    </div>
+
+    <div class="message warning">
+        <h2>Warning</h2>
+        <p>Some features may not work as expected. Please proceed with caution.</p>
+    </div>
+
+    <div class="message info">
+        <h2>Information</h2>
+        <p>New updates are available. Check the settings to download the latest version.</p>
+    </div>
+
+    <div class="message error">
+        <h2>Error</h2>
+        <p>An unexpected error occurred. Please try again later.</p>
+    </div>
+</body>
+</html>

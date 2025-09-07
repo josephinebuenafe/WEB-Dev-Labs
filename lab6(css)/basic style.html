@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Page</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f9fc;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        color: white;
+        background-color: #28a745; /* vibrant green */
+        padding: 10px;
+        border-radius: 6px;
+        margin: 10px 0;
+    }
+
+    h2 {
+        color: white;
+        background-color: #ff5722; /* vibrant orange */
+        padding: 8px;
+        border-radius: 6px;
+        margin: 10px 0;
+    }
+
+    p {
+        font-size: 16px;
+        color: #009688; /* teal */
+        margin: 10px 0;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .center button {
+        background-color: #e91e63; /* vibrant pink */
+        color: white;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .center button:hover {
+        background-color: #d81b60; /* darker pink on hover */
+    }
+</style>
+<body>
+    <h1>This is a heading</h1>
+    <h1 style="background-color: #2196f3; color: white; text-align: center; font-family: Arial, sans-serif; padding: 10px; border-radius: 6px;">
+        This is a heading
+    </h1>
+    <h2>This is a heading</h2>
+    <p>This is a paragraph.</p>
+
+    <div class="container">
+        <div class="center">
+            <button onclick="alert('You clicked the button! 🎉')">Click Me!</button>
+        </div>
+    </div>
+</body>
+</html>
