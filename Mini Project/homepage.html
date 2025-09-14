@@ -1,36 +1,264 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>JAVA HEAVEN</title>
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JAVA HEAVEN</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: #fdfcfb;
+      color: #3e2723;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      height: 60vh;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 10px;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    }
+
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: clamp(2.5em, 5vw, 4em);
+      margin: 0;
+    }
+
+    header p {
+      font-size: clamp(1em, 2vw, 1.4em);
+      margin-top: 10px;
+    }
+
+    nav {
+      background: #6d4c41;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      color: #fff8e1;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffcc80;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    section h2 {
+      font-family: 'Pacifico', cursive;
+      color: #5d4037;
+      font-size: 2em;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    section p {
+      text-align: center;
+      line-height: 1.6em;
+      font-size: 1.1em;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 25px;
+    }
+
+    .menu-item {
+      background: #fbe9e7;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .menu-item h3 {
+      font-size: 1.5em;
+      color: #4e342e;
+      margin-bottom: 10px;
+    }
+
+    .menu-item ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu-item ul li {
+      margin: 6px 0;
+      font-size: 1em;
+      color: #5d4037;
+    }
+
+    .special {
+      background: #ffe082;
+      border: 2px solid #ffca28;
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .special h3 {
+      font-size: 1.8em;
+      color: #e65100;
+      margin-bottom: 10px;
+    }
+
+    .special p {
+      font-size: 1.1em;
+      color: #4e342e;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      font-size: 1.1em;
+    }
+
+    footer {
+      text-align: center;
+      background: #4e342e;
+      color: #fbe9e7;
+      padding: 20px 10px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      header {
+        height: 50vh;
+      }
+
+      .menu-item h3 {
+        font-size: 1.3em;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 2.2em;
+      }
+
+      header p {
+        font-size: 1em;
+      }
+
+      .menu-item {
+        padding: 15px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>WELCOME | JAVA HEAVEN</h1>
-    <h2>Your Daily Coffee Stop</h2>
-    <p>Discover the best coffee blends made just for you.</p>
-    <hr>
 
-    <h2>About Us</h2>
-    <p>At Java Haven, we brew happiness in every cup.</p>
+  <header>
+    <h1>JAVA HEAVEN</h1>
+    <p>Your Daily Coffee Stop ☕</p>
+  </header>
 
-    <h3>OUR MENU:</h3>
-    <ul>
-        <li>Cappuccino</li>
-        <ol>Classic Cappuccino</ol>
-        <ol>Caramel Cappuccino</ol>
-        <ol>Vanilla Cappuccino</ol>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#menu">Menu</a>
+    <a href="#special">Special</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-        <li>Latte</li>
-        <ol>Vanilla Latte</ol>
-        <ol>Hazelnut Latte</ol>
+  <div class="container">
 
-        <li>Americano</li>
-        <ol>Hot Americano</ol>
-        <ol>Iced Americano</ol>
-    </ul>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>At Java Heaven, we believe coffee is more than a drink—it’s an experience. Since opening our doors in 2015, we’ve been dedicated to serving freshly brewed blends, delicious pastries, and warm smiles to our community. Whether you’re here to grab a quick espresso or relax with friends, Java Heaven is your cozy escape.</p>
+    </section>
 
-    <hr>
+    <section id="menu">
+      <h2>Our Menu</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <h3>Cappuccino</h3>
+          <ul>
+            <li>Classic Cappuccino</li>
+            <li>Caramel Cappuccino</li>
+            <li>Vanilla Cappuccino</li>
+          </ul>
+        </div>
+        <div class="menu-item">
+          <h3>Latte</h3>
+          <ul>
+            <li>Vanilla Latte</li>
+            <li>Hazelnut Latte</li>
+            <li>Mocha Latte</li>
+          </ul>
+        </div>
+        <div class="menu-item">
+          <h3>Americano</h3>
+          <ul>
+            <li>Hot Americano</li>
+            <li>Iced Americano</li>
+            <li>Double Shot Americano</li>
+          </ul>
+        </div>
+        <div class="menu-item">
+          <h3>Pastries</h3>
+          <ul>
+            <li>Blueberry Muffin</li>
+            <li>Chocolate Croissant</li>
+            <li>Classic Cheesecake</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="special" class="special">
+      <h3>☕ Today’s Special: Pumpkin Spice Latte 🎃</h3>
+      <p>A creamy blend of espresso, steamed milk, cinnamon, nutmeg, and pumpkin syrup topped with whipped cream. Available only this season!</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <p><b>📍 Location:</b> 123 Brew Street, Coffeeville</p>
+      <p><b>🕒 Hours:</b> Mon - Sun | 7:00am - 9:00pm</p>
+      <p><b>📧 Email:</b> hello@javaheaven.com</p>
+    </section>
+  </div>
+
+  <footer>
     <p>&copy; 2025 JAVA HEAVEN. All rights reserved.</p>
-    <link rel="stylesheet" href="style.css">
+  </footer>
+
 </body>
 </html>

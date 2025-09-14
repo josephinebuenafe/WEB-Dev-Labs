@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Examples</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f5f5f5;
+      margin: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .example {
+      margin-bottom: 40px;
+    }
+
+    .title {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #5a2d82;
+    }
+
+    .flex-container {
+      display: flex;
+      background: #8e44ad;
+      padding: 15px;
+      border-radius: 8px;
+      height: 150px;
+    }
+
+    .box {
+      width: 60px;
+      height: 40px;
+      background: orange;
+      border-radius: 5px;
+      margin: 5px;
+    }
+
+    .flex-start { justify-content: Flex-Start; }
+    .flex-end { justify-content: Flex-End; }
+    .center { justify-content: Center; }
+    .stretch { align-items: Stretch; }
+    .space-between { justify-content: Space-Between; }
+    .space-around { justify-content: Space-Around; }
+  </style>
+</head>
+<body>
+  <h1>Flexbox Justify Content Examples</h1>
+
+  <div class="example">
+    <div class="title">flex-start</div>
+    <div class="flex-container flex-start">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </div>
+
+  <div class="example">
+    <div class="title">flex-end</div>
+    <div class="flex-container flex-end">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </div>
+
+  <div class="example">
+    <div class="title">center</div>
+    <div class="flex-container center">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </div>
+
+  <div class="example">
+    <div class="title">stretch</div>
+    <div class="flex-container stretch">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </div>
+
+  <div class="example">
+    <div class="title">space-between</div>
+    <div class="flex-container space-between">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </div>
+
+  <div class="example">
+    <div class="title">space-around</div>
+    <div class="flex-container space-around">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </div>
+
+</body>
+</html>
