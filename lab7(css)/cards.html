@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Character Cards</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+      margin: 0;
+      padding: 40px;
+      color: #fff;
+    }
+
+    h1 {
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+      color: #f1f1f1;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #fff;
+      color: #333;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card h3 {
+      margin: 10px 0;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #0f3460;
+    }
+
+    .card span {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #e94560;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>Anime Character Cards</h1>
+
+  <div class="card-container">
+    <div class="card">
+      <img src="lab7(css)/imagesrc/sung jin-woo.jpg" alt="Sung Jinwoo">
+      <div class="card-content">
+        <h3>Sung Jinwoo</h3>
+        <span>Solo Leveling</span>
+        <p>Once the weakest E-Rank, Jinwoo rose to become the Shadow Monarch. He commands an army of shadows and bridges the gap between humans and Monarchs.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="lab7(css)/imagesrc/chahae-in.jpg" alt="Cha Hae-In">
+      <div class="card-content">
+        <h3>Cha Hae-In</h3>
+        <span>Solo Leveling</span>
+        <p>The strongest female hunter in Korea, a master swordfighter with the rare ability to sense mana. Graceful and loyal, she finds peace only around Jinwoo.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="lab7(css)/imagesrc/gojosatoru.jpg" alt="Gojo Satoru">
+      <div class="card-content">
+        <h3>Gojo Satoru</h3>
+        <span>Jujutsu Kaisen</span>
+        <p>A special grade sorcerer with Limitless and Six Eyes. Playful yet unstoppable, his Infinity barrier makes him untouchable and feared by all curses.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="lab7(css)/imagesrc/sakamoto.jpg" alt="Taro Sakamoto">
+      <div class="card-content">
+        <h3>Taro Sakamoto</h3>
+        <span>Sakamoto Days</span>
+        <p>A retired hitman turned family man and shop owner. Despite his calm life, his deadly speed and skills remain sharp, making him a living legend.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
