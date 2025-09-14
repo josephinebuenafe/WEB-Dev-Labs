@@ -4,54 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box Style</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Fredoka+One&display=swap" rel="stylesheet">
+
     <style>
         body {
-            border: 10px solid black;
-            border-radius: 30px;
-            margin: 5px;
-            padding: 20px;
-            background-color: #f4f9fc;
-            font-family: Arial, sans-serif;
-        }
-
-        h1 {
-            font-family: Arial, sans-serif;
-            text-align: center;
+            border: 8px double #2c3e50;
+            border-radius: 25px;
+            margin: 10px;
+            padding: 25px;
+            background: linear-gradient(135deg, #f9f9f9, #e0f7fa);
+            font-family: 'Roboto', sans-serif;
             color: #2c3e50;
         }
 
-        .box {
-            width: 300px;
-            margin: 20px auto;
-            padding: 15px;
-            border-radius: 10px;
-            font-family: Arial, sans-serif;
-        }
-
-        .box1 {
-            background-color: #ffeb3b;
-            border: 2px solid #f57f17;
-        }
-
-        .box2 {
-            background-color: #03a9f4;
-            border: 3px dashed #01579b;
-        }
-
-        .box3 {
-            background-color: #e91e63;
-            border: 4px dotted #880e4f;
+        h1 {
+            font-family: 'Fredoka One', cursive;
+            text-align: center;
+            color: #1a237e;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
         }
 
         p {
-            font-family: Arial, sans-serif;
-            color: #333;
+            font-size: 16px;
+            color: #37474f;
+            text-align: center;
+        }
+
+        .box {
+            width: 320px;
+            margin: 20px auto;
+            padding: 18px;
+            border-radius: 15px;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .box h2 {
+            font-family: 'Fredoka One', cursive;
+            margin-bottom: 10px;
+        }
+
+        .box1 {
+            background: #fff9c4;
+            border: 3px solid #fbc02d;
+        }
+
+        .box2 {
+            background: #b3e5fc;
+            border: 3px dashed #0288d1;
+        }
+
+        .box3 {
+            background: #f8bbd0;
+            border: 3px dotted #ad1457;
+        }
+
+        .end {
+            margin-top: 25px;
+            font-weight: bold;
+            font-size: 18px;
+            color: #004d40;
         }
     </style>
 </head>
 <body>
     <h1>ACTIVITY 5 - BOX STYLING</h1>
-    <p style="text-align: center;">Welcome to my styled box activity!</p>
+    <p>Welcome to my styled box activity!</p>
 
     <div class="box box1">
         <h2>Box 1</h2>
@@ -68,6 +90,6 @@
         <p>This box shows a dotted border and a vibrant pink background.</p>
     </div>
 
-    <p style="text-align: center;">End of Activity</p>
+    <p class="end">End of Activity</p>
 </body>
 </html>

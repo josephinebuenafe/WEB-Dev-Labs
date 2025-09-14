@@ -4,46 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Message Styles</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Nunito', sans-serif;
             margin: 20px;
+            background: #f5f7fa;
+            color: #333;
         }
 
         .message {
-            margin: 20px 0;
-            padding: 15px;
-            border-radius: 6px;
+            margin: 20px auto;
+            padding: 18px 22px;
+            border-radius: 12px;
             font-size: 16px;
+            max-width: 600px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
         }
 
-        .success {
-            background-color: #d4edda;
-            color: #155724;
-            border: 2px solid #28a745;
-        }
-
-        .warning {
-            background-color: #fff3cd;
-            color: #856404;
-            border: 2px solid #ffc107;
-        }
-
-        .info {
-            background-color: #d1ecf1;
-            color: #0c5460;
-            border: 2px solid #17a2b8;
-        }
-
-        .error {
-            background-color: #f8d7da;
-            color: #721c24;
-            border: 2px solid #dc3545;
+        .message:hover {
+            transform: translateY(-3px);
         }
 
         h2 {
             margin-top: 0;
-            font-size: 20px;
+            font-size: 22px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .success {
+            background: linear-gradient(135deg, #d4fc79, #96e6a1);
+            color: #1b5e20;
+            border-left: 6px solid #2e7d32;
+        }
+
+        .warning {
+            background: linear-gradient(135deg, #fff6b7, #f6416c);
+            color: #4e342e;
+            border-left: 6px solid #f57c00;
+        }
+
+        .info {
+            background: linear-gradient(135deg, #89f7fe, #66a6ff);
+            color: #0d47a1;
+            border-left: 6px solid #1565c0;
+        }
+
+        .error {
+            background: linear-gradient(135deg, #ff9a9e, #ff6a88);
+            color: #b71c1c;
+            border-left: 6px solid #c62828;
         }
     </style>
 </head>
