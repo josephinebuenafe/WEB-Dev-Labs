@@ -5,21 +5,26 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.6;
-  background-color: #fdfdfd;
-  color: #333;
+  background: linear-gradient(135deg, #00c6ff, #0072ff, #00ffb3);
+  background-attachment: fixed;
+  color: #fff;
 }
 
+/* Header & Navigation */
 header {
-  background: #ff6600;
-  color: #fff;
-  padding: 20px 0;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 25px 0;
   text-align: center;
 }
 
 header h1 {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #ffdf00;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
 }
 
 nav ul {
@@ -27,123 +32,90 @@ nav ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 15px;
-}
-
-nav ul li {
-  display: inline;
+  gap: 20px;
 }
 
 nav ul li a {
   text-decoration: none;
   color: #fff;
-  font-weight: bold;
-  padding: 8px 12px;
-  border-radius: 5px;
-  transition: background 0.3s;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
 }
 
-nav ul li a:hover {
-  background: #cc5200;
+nav ul li a:hover,
+nav ul li a.active {
+  background: #ff6600;
+  color: #fff;
 }
 
+/* Main Content */
 main {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 20px auto;
   padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
 }
 
 main h2 {
-  color: #ff6600;
+  color: #ffdf00;
   margin-bottom: 15px;
+  font-size: 1.8rem;
 }
 
-article p {
+main p {
   margin-bottom: 15px;
   text-align: justify;
+  font-size: 1.05rem;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  margin: 15px 0;
-  border-radius: 8px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+/* Festival List */
+.festival-list {
+  margin: 20px 0;
+  padding-left: 20px;
 }
 
-#faq {
-  margin-top: 40px;
-  padding: 20px;
-  background: #fff3e6;
-  border: 1px solid #ffd6b3;
-  border-radius: 8px;
+.festival-list li {
+  margin-bottom: 10px;
+  font-size: 18px;
 }
 
-.faq-item {
-  margin-bottom: 15px;
+.festival-list a {
+  color: #ffdf00;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-.faq-question {
-  cursor: pointer;
-  background: #ff944d;
-  padding: 10px;
-  border-radius: 5px;
-  color: white;
-  transition: background 0.3s;
+.festival-list a:hover {
+  text-decoration: underline;
 }
 
-.faq-question:hover {
-  background: #e67300;
+/* Embedded Media (video, map) */
+.media-embed {
+  margin: 25px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
-.faq-answer {
-  margin-top: 8px;
-  padding: 10px;
-  background: #fff;
-  border-left: 3px solid #ff6600;
-  display: none;
-  border-radius: 4px;
-}
-
-/* Gallery Section */
-.gallery {
-  margin-top: 40px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
-}
-
-.gallery img {
-  cursor: pointer;
-  transition: transform 0.3s;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
+.media-embed iframe {
+  width: 100%;
+  max-width: 650px;
+  height: 360px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.4);
 }
 
 /* Footer */
 footer {
-  background: #333;
+  background: rgba(0, 0, 0, 0.8);
   color: #fff;
   text-align: center;
   padding: 15px 0;
   margin-top: 40px;
-}
-
-/* Back-to-Top Button (extra styling, JS injects element) */
-#backToTop {
-  background: #ff6600;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 15px;
-  font-size: 14px;
-  cursor: pointer;
-  display: none;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-}
-
-#backToTop:hover {
-  background: #cc5200;
+  font-size: 0.9rem;
 }

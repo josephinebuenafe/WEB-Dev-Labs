@@ -4,47 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Philippine Festivals Guide</title>
-  <meta name="description" content="Explore the colorful and vibrant festivals of the Philippines through this festival guide.">
+  <meta name="description" content="Discover the top 15 most famous festivals in the Philippines. Learn about their history, traditions, locations, and cultural significance.">
   <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Philippine Festivals Guide</h1>
+    <h1> Philippine Festivals Guide </h1>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="pages/about.html">About Festivals</a></li>
-        <li><a href="pages/sinulog.html">Sinulog</a></li>
-        <li><a href="pages/ati-atihan.html">Ati-Atihan</a></li>
-        <li><a href="pages/panagbenga.html">Panagbenga</a></li>
-        <li><a href="pages/kadayawan.html">Kadayawan</a></li>
-        <li><a href="pages/pahiyas.html">Pahiyas</a></li>
-        <li><a href="pages/masskara.html">MassKara</a></li>
-        <li><a href="pages/others.html">Other Festivals</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="pages/about.html">About</a></li>
         <li><a href="pages/credits.html">Credits</a></li>
       </ul>
     </nav>
+
+    <div class="search-container">
+      <input type="text" id="festivalSearch" placeholder="Search a festival...">
+      <button onclick="searchFestival()">Search</button>
+    </div>
   </header>
 
   <main>
     <section>
       <h2>Welcome to the Philippine Festivals Guide</h2>
       <p>
-        The Philippines is home to hundreds of festivals celebrated across its many islands. 
-        Each festival reflects the unique traditions, religious devotion, and cultural pride of Filipinos. 
-        From the colorful masks of Bacolod’s MassKara Festival to the flower parades of Baguio’s Panagbenga, 
-        these celebrations highlight the creativity and spirit of the people.  
+        The Philippines is famous for its colorful, energetic, and culturally rich festivals. 
+        Each fiesta showcases the joy, artistry, and traditions of Filipinos. From grand street 
+        dances to elaborate floats, every festival tells a unique story. Whether you are a 
+        tourist or a local, this guide will help you explore 15 of the country’s most 
+        celebrated festivals.
       </p>
-      <p>
-        This website serves as your guide to some of the most popular and exciting festivals in the country. 
-        Browse through the pages to learn more about the history, traditions, and fun activities of each event.  
-      </p>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIBj-h6fmUZU8Ff2SdVIBPr2bHewEbbUgE0w&s" alt="Colorful Philippine Festival Parade" width="600">
+
+      <h2>Top 15 Festivals in the Philippines</h2>
+      <ul class="festival-list">
+        <li><a href="sinulog.html">Sinulog Festival – Cebu City</a></li>
+        <li><a href="ati-atihan.html">Ati-Atihan Festival – Kalibo, Aklan</a></li>
+        <li><a href="panagbenga.html">Panagbenga Festival – Baguio City</a></li>
+        <li><a href="kadayawan.html">Kadayawan Festival – Davao City</a></li>
+        <li><a href="pahiyas.html">Pahiyas Festival – Lucban, Quezon</a></li>
+        <li><a href="masskara.html">MassKara Festival – Bacolod City</a></li>
+        <li><a href="moriones.html">Moriones Festival – Marinduque</a></li>
+        <li><a href="pintados.html">Pintados Festival – Tacloban, Leyte</a></li>
+        <li><a href="higantes.html">Higantes Festival – Angono, Rizal</a></li>
+        <li><a href="dinagyang.html">Dinagyang Festival – Iloilo City</a></li>
+        <li><a href="obando.html">Obando Fertility Rites – Bulacan</a></li>
+        <li><a href="lantern.html">Giant Lantern Festival – Pampanga</a></li>
+        <li><a href="sandugo.html">Sandugo Festival – Bohol</a></li>
+        <li><a href="ibalong.html">Ibalong Festival – Legazpi, Albay</a></li>
+        <li><a href="kaamulan.html">Kaamulan Festival – Bukidnon</a></li>
+      </ul>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Philippine Festivals Guide. All Rights Reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
