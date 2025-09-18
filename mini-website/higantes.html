@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Higantes Festival | Philippine Festivals Guide</title>
+  <meta name="description" content="Discover the Higantes Festival of Angono, Rizal, a vibrant celebration featuring giant papier-mâché figures, colorful parades, and rich Filipino artistry.">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Higantes Festival</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="credits.html">Credits</a></li>
+        <li><a href="higantes.html" class="active">Higantes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <article>
+        <h2>History and Significance</h2>
+        <p>
+          The <strong>Higantes Festival</strong> is celebrated every November 23 in Angono, Rizal, the “Art Capital of the Philippines.” 
+          It pays tribute to San Clemente, the town’s patron saint, with a procession of colorful giant papier-mâché effigies 
+          locally called <em>higantes</em>. 
+        </p>
+        <p>
+          The festival traces its roots to the Spanish colonial period, when Angono residents used giant figures as a form of protest against Spanish landlords. 
+          Today, it has transformed into a joyful celebration of art, creativity, and community pride, attracting both local and international visitors.
+        </p>
+        <img src="https://lakbaypinas.com/wp-content/uploads/2024/10/Snapinsta.app_316123155_1204971320363839_5981302798765105294_n_1080-1.jpg" alt="Higantes Festival parade featuring giant papier-mâché figures in Angono, Rizal">
+      </article>
+    </section>
+
+    <section>
+      <h2>Festival Highlights</h2>
+      <article>
+        <ul class="festival-list">
+          <li>Parade of giant papier-mâché figures or <em>higantes</em></li>
+          <li>Fluvial procession in honor of San Clemente</li>
+          <li>Street dancing and cultural performances</li>
+          <li>Art exhibits showcasing Angono’s creativity</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>Interactive Gallery</h2>
+      <article class="festival-gallery">
+        <img src="https://img1.wsimg.com/isteam/ip/a69258aa-2fe9-4685-9ec0-5be345180e15/tntph-on-Twitter.jpg" alt="Giant papier-mâché Higantes displayed during the festival">
+        <img src="https://www.rizalprovince.ph/tourism/Rizal%20Major%20Tourist%20Destination%20and%20festivals/ANGONO/HIGANTES/IMG_3541.JPG" alt="Colorful Higantes parade with crowd in Angono">
+        <img src="https://themixedculture.com/wp-content/uploads/2013/10/higantes1.jpg" alt="Festive parade of giant figures during Higantes Festival">
+      </article>
+    </section>
+
+    <section>
+      <h2>Festival Map & Video</h2>
+      <article>
+        <p>Join the celebration in Angono, Rizal:</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3857.123647539528!2d121.153385!3d14.526175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c66008f19dd3%3A0x21c1a9e67218494c!2sAngono%2C%20Rizal!5e0!3m2!1sen!2sph!4v1705564444"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p>Watch the colorful Higantes Festival:</p>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/yS6n_yguzm4?si=AlRUpcCqIgkvFpqs" title="Higantes Festival Parade in Angono Rizal" frameborder="0" allowfullscreen></iframe>
+      </article>
+    </section>
+
+    <section>
+      <h2>Frequently Asked Questions</h2>
+      <article>
+        <details>
+          <summary>When is the Higantes Festival celebrated?</summary>
+          <p>The festival is held annually on November 23 in Angono, Rizal.</p>
+        </details>
+        <details>
+          <summary>What are Higantes made of?</summary>
+          <p>They are made of papier-mâché, bamboo, and other lightweight materials, painted in vibrant colors.</p>
+        </details>
+        <details>
+          <summary>Can tourists join the festivities?</summary>
+          <p>Yes! Visitors are welcome to join the street celebrations and view the Higantes parade.</p>
+        </details>
+      </article>
+    </section>
+
+    <section>
+      <h2>Contact Us</h2>
+      <article>
+        <form>
+          <label for="name">Your Name:</label><br>
+          <input type="text" id="name" name="name" required><br><br>
+
+          <label for="email">Your Email:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+          <button type="submit">Send</button>
+        </form>
+      </article>
+    </section>
+
+    <button id="back-to-top">Back to Top</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Philippine Festivals Guide. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Back to top button
+    const backToTop = document.getElementById("back-to-top");
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Prevent actual form submission
+    const form = document.querySelector("form");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      alert("Thank you! Your message has been recorded.");
+    });
+  </script>
+</body>
+</html>

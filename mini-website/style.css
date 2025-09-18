@@ -270,3 +270,48 @@ footer {
     align-items: center;
   }
 }
+
+/* Festival Top Image */
+.festival-top-image {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.festival-top-image img {
+  width: 100%;
+  max-width: 800px; /* keeps it nicely sized */
+  height: 400px; /* rectangle style */
+  object-fit: cover;
+  border: 3px solid #444;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.festival-top-image img:hover {
+  transform: scale(1.03);
+}
+
+/* Festival Pages Gallery */
+.festival-gallery {
+  display: flex;
+  justify-content: space-between; /* equal spacing between images */
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.festival-gallery img {
+  flex: 1;
+  max-width: 32%; /* 3 images in a row */
+  height: 220px; /* rectangle size */
+  object-fit: cover; /* keeps image proportions while filling space */
+  border: 3px solid #444;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.festival-gallery img:hover {
+  transform: scale(1.05);
+}
+

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giant Lantern Festival | Philippine Festivals Guide</title>
+  <meta name="description" content="Discover the Giant Lantern Festival in San Fernando, Pampanga. Learn about its history, traditions, dazzling lantern displays, and cultural significance as the 'Christmas Capital of the Philippines.'">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Giant Lantern Festival</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="credits.html">Credits</a></li>
+        <li><a href="lantern.html" class="active">Lantern Festival</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <article>
+        <h2>History and Significance</h2>
+        <p>
+          The <strong>Giant Lantern Festival</strong>, also known as <em>Ligligan Parul</em>, is held annually in December in San Fernando, Pampanga—the “Christmas Capital of the Philippines.” 
+          It began as a small tradition of simple lantern-making during the Spanish colonial period but has since evolved into a grand competition showcasing massive, intricate lanterns that light up the night sky.
+        </p>
+        <p>
+          These giant lanterns, some reaching up to 20 feet in diameter, are made of steel frames, colored plastics, and thousands of light bulbs controlled by synchronized switches. 
+          The festival is not just a contest but a celebration of creativity, craftsmanship, and the Kapampangan spirit of unity and resilience.
+        </p>
+        <img src="https://culturalcreatives.org/wp-content/uploads/2023/12/Heart-Of-The-Festival.jpg" alt="Dazzling lanterns during the Giant Lantern Festival in San Fernando, Pampanga">
+      </article>
+    </section>
+
+    <section>
+      <h2>Festival Highlights</h2>
+      <article>
+        <ul class="festival-list">
+          <li>Competition of giant lanterns crafted by different barangays</li>
+          <li>Dazzling lights and synchronized music displays</li>
+          <li>Parades and cultural presentations</li>
+          <li>Food stalls and Christmas bazaars</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>Interactive Gallery</h2>
+      <article class="festival-gallery">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVXajNicfJqD_DIlSxRPsSq5RTKZlUbhnl3Q&s" alt="Colorful lantern display in Pampanga">
+        <img src="https://images.summitmedia-digital.com/spotph/images/2023/12/20/giant-lantern-festival-main-image-1703053635.jpg" alt="Lanterns lighting up the night sky">
+        <img src="https://res.klook.com/image/upload/v1694428759/tetris/image/ggs9yw4wzo6cw271peid.webp" alt="Crowd enjoying the lantern show in Pampanga">
+      </article>
+    </section>
+
+    <section>
+      <h2>Festival Map & Video</h2>
+      <article>
+        <p>Explore San Fernando, Pampanga where the Giant Lantern Festival takes place:</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.893679174224!2d120.684!3d15.034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396f22ef3b1bdb5%3A0xceb513e7f93c73b2!2sSan%20Fernando%2C%20Pampanga!5e0!3m2!1sen!2sph!4v1705555555"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p>Watch the spectacular Giant Lantern Festival performance:</p>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/5wrpyxqqIkg?si=6AWwovOV04GdXNcq" title="Giant Lantern Festival San Fernando Pampanga" frameborder="0" allowfullscreen></iframe>
+      </article>
+    </section>
+
+    <section>
+      <h2>Frequently Asked Questions</h2>
+      <article>
+        <details>
+          <summary>When is the Giant Lantern Festival held?</summary>
+          <p>The festival is held every December, usually the Saturday before Christmas Eve.</p>
+        </details>
+        <details>
+          <summary>Why is San Fernando called the "Christmas Capital of the Philippines"?</summary>
+          <p>Because of its world-famous Giant Lantern Festival, showcasing dazzling lanterns symbolizing Filipino Christmas spirit.</p>
+        </details>
+        <details>
+          <summary>Can tourists watch the lantern competition?</summary>
+          <p>Yes! The festival is open to the public and draws both local and international visitors every year.</p>
+        </details>
+      </article>
+    </section>
+
+    <section>
+      <h2>Contact Us</h2>
+      <article>
+        <form>
+          <label for="name">Your Name:</label><br>
+          <input type="text" id="name" name="name" required><br><br>
+
+          <label for="email">Your Email:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+          <button type="submit">Send</button>
+        </form>
+      </article>
+    </section>
+
+    <button id="back-to-top">Back to Top</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Philippine Festivals Guide. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Back to top button
+    const backToTop = document.getElementById("back-to-top");
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Prevent actual form submission
+    const form = document.querySelector("form");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      alert("Thank you! Your message has been recorded.");
+    });
+  </script>
+</body>
+</html>

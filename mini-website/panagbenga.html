@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panagbenga Festival | Philippine Festivals Guide</title>
+  <meta name="description" content="Discover the Panagbenga Festival in Baguio City. Learn about its origins, grand flower floats, street dancing, and its role in celebrating Cordillera culture and community pride.">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Panagbenga Festival</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="credits.html">Credits</a></li>
+        <li><a href="ati-atihan.html">Ati-Atihan</a></li>
+        <li><a href="sinulog.html">Sinulog</a></li>
+        <li><a href="panagbenga.html" class="active">Panagbenga</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <article>
+        <h2>History and Significance</h2>
+        <p>
+          The <strong>Panagbenga Festival</strong>, meaning “season of blooming,” is held every February in Baguio City. First celebrated in 1995, it was created to boost the city’s economy after the 1990 Luzon earthquake. Since then, it has grown into one of the country’s most iconic festivals, attracting millions of visitors from around the world.
+        </p>
+        <p>
+          Panagbenga highlights the rich culture of the Cordillera region through street dancing inspired by the movements of flowers and nature. Its main attraction is the <em>Grand Float Parade</em>, featuring spectacular floats covered entirely in vibrant flowers. The festival also emphasizes community involvement, environmental awareness, and the creative spirit of the people of Baguio.
+        </p>
+        <div class="festival-top-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjSN-XaAmLwzwN9UDYjRZslCX7hXUXx20dWw&s" alt="Colorful float made of flowers during Panagbenga Festival in Baguio City">
+        </div>
+      </article>
+    </section>
+
+    <section>
+      <h2>Festival Highlights</h2>
+      <article>
+        <ul class="festival-list">
+          <li>Grand Float Parade featuring flower-covered floats</li>
+          <li>Street dancing inspired by flowers and Cordillera traditions</li>
+          <li>Market encounters and community trade fairs</li>
+          <li>Exhibitions, concerts, and cultural showcases</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>Interactive Gallery</h2>
+      <article class="festival-gallery">
+        <img src="https://www.vistaresidences.com.ph/assets/blog-images/002-panagbenga-2025-guide.jpeg" alt="Street dancers performing in Panagbenga">
+        <img src="https://www.vistaresidences.com.ph/assets/blog-images/003-panagbenga-2025-guide.jpeg" alt="Grand float covered with colorful flowers in Panagbenga">
+        <img src="https://www.vistaresidences.com.ph/assets/img/001-panagbenga-2025-guide.png" alt="Festival crowd enjoying Panagbenga parade">
+      </article>
+    </section>
+
+    <section>
+      <h2>Festival Map & Video</h2>
+      <article>
+        <p>Explore Baguio City, home of the Panagbenga Festival:</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.3936849434117!2d120.5929!3d16.4023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391a168fcbe0f1d%3A0x32ee6a1e2e6d25e3!2sBaguio%20City!5e0!3m2!1sen!2sph!4v1705650000" 
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p>Watch this Panagbenga Festival performance:</p>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/Ak438PLkpBg?si=wTV0EdfGoxfjOE1x" title="Panagbenga Festival Parade" frameborder="0" allowfullscreen></iframe>
+      </article>
+    </section>
+
+    <section>
+      <h2>Frequently Asked Questions</h2>
+      <article>
+        <details>
+          <summary>When is the Panagbenga Festival celebrated?</summary>
+          <p>The festival is held every February in Baguio City.</p>
+        </details>
+        <details>
+          <summary>What does "Panagbenga" mean?</summary>
+          <p>It means "season of blooming," symbolizing Baguio’s flowers and culture.</p>
+        </details>
+        <details>
+          <summary>What is the highlight of Panagbenga?</summary>
+          <p>The Grand Float Parade, where floats are decorated with thousands of fresh flowers, is the most awaited event.</p>
+        </details>
+      </article>
+    </section>
+
+    <section>
+      <h2>Contact Us</h2>
+      <article>
+        <form>
+          <label for="name">Your Name:</label><br>
+          <input type="text" id="name" name="name" required><br><br>
+
+          <label for="email">Your Email:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+          <button type="submit">Send</button>
+        </form>
+      </article>
+    </section>
+
+    <button id="back-to-top">Back to Top</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Philippine Festivals Guide. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Back to top button
+    const backToTop = document.getElementById("back-to-top");
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Prevent actual form submission
+    const form = document.querySelector("form");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      alert("Thank you! Your message has been recorded.");
+    });
+  </script>
+</body>
+</html>

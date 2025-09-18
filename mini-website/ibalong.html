@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ibalong Festival | Philippine Festivals Guide</title>
+  <meta name="description" content="Discover the Ibalong Festival in Legazpi City, Albay. Learn about its epic origins, street parades, theatrical performances, and the celebration of the legendary heroes of Bicol.">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Ibalong Festival</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="credits.html">Credits</a></li>
+        <li><a href="ibalong.html" class="active">Ibalong</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <article>
+        <h2>History and Significance</h2>
+        <p>
+          The <strong>Ibalong Festival</strong> is held every August in Legazpi City, Albay. 
+          It is inspired by the ancient Bicol epic “Ibalong,” which tells the story of legendary heroes such as Baltog, Handyong, and Bantong who defended their land against beasts and invaders. 
+          The festival celebrates courage, resilience, and the rich heritage of the Bicolanos.
+        </p>
+        <p>
+          Unlike most religious-based Philippine festivals, Ibalong is secular in nature. 
+          It focuses on cultural performances, parades, and reenactments of the epic tales, making it a unique tribute to Bicol’s mythology and history. 
+          Today, it attracts tourists who are fascinated by its theatrical street performances, elaborate costumes, and storytelling traditions.
+        </p>
+        <img src="https://i.ytimg.com/vi/CCUE991QKKQ/maxresdefault.jpg" alt="Performers in warrior costumes during the Ibalong Festival parade in Albay">
+      </article>
+    </section>
+
+    <section>
+      <h2>Festival Highlights</h2>
+      <article>
+        <ul class="festival-list">
+          <li>Theatrical street parades reenacting the Ibalong epic</li>
+          <li>Elaborate warrior and beast costumes</li>
+          <li>Cultural shows featuring Bicolano music and dance</li>
+          <li>Trade fairs, food festivals, and tourism showcases</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>Interactive Gallery</h2>
+      <article class="festival-gallery">
+        <img src="https://jontotheworld.com/wp-content/uploads/2024/07/Ibalong-Festival-1180x787.jpg" alt="Warrior performers at Ibalong Festival">
+        <img src="https://www.hlimg.com/images/events/738X538/event_1538115963m1.jpg?w=400&dpr=2.6" alt="Street dancers in colorful warrior costumes at Ibalong">
+        <img src="https://lakbaypinas.com/wp-content/uploads/2024/07/441866826_897512732421233_1605897946557486938_n.jpg.webp" alt="Epic reenactment of Ibalong heroes and monsters">
+      </article>
+    </section>
+
+    <section>
+      <h2>Festival Map & Video</h2>
+      <article>
+        <p>Visit Legazpi City, Albay to witness the Ibalong Festival:</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.857265795724!2d123.733846!3d13.143565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a1a1f2f7357b1f%3A0xbadbfcfbf7d84a3f!2sLegazpi%20City%2C%20Albay!5e0!3m2!1sen!2sph!4v1705555555"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p>Watch a glimpse of the Ibalong Festival parade:</p>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/d47HdrRx99w?si=N4z0M_eAg0eVRN7P" title="Ibalong Festival Street Performance" frameborder="0" allowfullscreen></iframe>
+      </article>
+    </section>
+
+    <section>
+      <h2>Frequently Asked Questions</h2>
+      <article>
+        <details>
+          <summary>When is the Ibalong Festival celebrated?</summary>
+          <p>It is held every August in Legazpi City, Albay.</p>
+        </details>
+        <details>
+          <summary>What makes the Ibalong Festival unique?</summary>
+          <p>Unlike most festivals, it is secular and based on the epic of Ibalong, showcasing mythology and heroism.</p>
+        </details>
+        <details>
+          <summary>Can tourists participate in the festivities?</summary>
+          <p>Yes, tourists are encouraged to join the parades, enjoy cultural shows, and explore local exhibits.</p>
+        </details>
+      </article>
+    </section>
+
+    <section>
+      <h2>Contact Us</h2>
+      <article>
+        <form>
+          <label for="name">Your Name:</label><br>
+          <input type="text" id="name" name="name" required><br><br>
+
+          <label for="email">Your Email:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+          <button type="submit">Send</button>
+        </form>
+      </article>
+    </section>
+
+    <button id="back-to-top">Back to Top</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Philippine Festivals Guide. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Back to top button
+    const backToTop = document.getElementById("back-to-top");
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Prevent actual form submission
+    const form = document.querySelector("form");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      alert("Thank you! Your message has been recorded.");
+    });
+  </script>
+</body>
+</html>

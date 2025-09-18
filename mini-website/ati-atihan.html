@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ati-Atihan Festival | Philippine Festivals Guide</title>
+  <meta name="description" content="Learn about the Ati-Atihan Festival in Kalibo, Aklan. Explore its history, traditions, vibrant dances, music, and cultural significance as one of the grandest festivals in the Philippines.">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Ati-Atihan Festival</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="credits.html">Credits</a></li>
+        <li><a href="ati-atihan.html" class="active">Ati-Atihan</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <article>
+        <h2>History and Significance</h2>
+        <p>
+          The <strong>Ati-Atihan Festival</strong> is celebrated every January in Kalibo, Aklan, and is widely known as the "Mother of All Philippine Festivals." It traces its roots to the 13th century when the native Aetas (or Atis) and Malay settlers lived peacefully together. Over the centuries, it evolved into a vibrant celebration honoring the Santo Niño (Child Jesus), blending indigenous traditions with Christian devotion.
+        </p>
+        <p>
+          During the festivities, participants paint their faces with black soot, wear colorful tribal costumes, and dance to the rhythmic beat of drums while chanting "Hala Bira!" The event highlights unity, cultural pride, and spiritual faith. Today, the Ati-Atihan not only attracts local devotees but also draws tourists worldwide who come to witness its lively street parades, religious processions, and cultural exhibitions.
+        </p>
+        <div class="festival-top-image">
+          <img src="https://madeinphilippineshandicrafts.wordpress.com/wp-content/uploads/2017/03/ati-atihan.jpg" alt="Performers dancing during the Ati-Atihan Festival in Kalibo, Aklan">
+        </div>
+      </article>
+    </section>
+
+    <section>
+      <h2>Festival Highlights</h2>
+      <article>
+        <ul class="festival-list">
+          <li>Street dancing with drumbeats and chants of “Hala Bira!”</li>
+          <li>Tribal-inspired costumes and colorful parades</li>
+          <li>Religious procession in honor of the Santo Niño</li>
+          <li>Concerts, food fairs, and cultural showcases</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>Interactive Gallery</h2>
+      <article class="festival-gallery">
+        <img src="https://secret-ph.com/wp-content/uploads/2023/01/3-27.jpg" alt="Ati-Atihan performers in colorful costumes">
+        <img src="https://secret-ph.com/wp-content/uploads/2023/01/4-27.jpg" alt="Parade of dancers during Ati-Atihan festival">
+        <img src="https://secret-ph.com/wp-content/uploads/2023/01/2-28.jpg.webp" alt="Crowd celebrating Ati-Atihan in Kalibo">
+      </article>
+    </section>
+
+    <section>
+      <h2>Festival Map & Video</h2>
+      <article>
+        <p>Explore Kalibo, Aklan where the Ati-Atihan Festival is held:</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3933.0521433790917!2d122.36478!3d11.70748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a531d6fdfdd5e7%3A0xdee913feabcaa9e1!2sKalibo%2C%20Aklan!5e0!3m2!1sen!2sph!4v1705555555" 
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p>Watch this cultural performance to experience Ati-Atihan:</p>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/WddiM5BBNTA?si=QKOIZw8172zd5_td" title="YouTube video player" title="Ati-Atihan Festival Parade" frameborder="0" allowfullscreen></iframe>
+      </article>
+    </section>
+
+    <section>
+      <h2>Frequently Asked Questions</h2>
+      <article>
+        <details>
+          <summary>When is the Ati-Atihan Festival celebrated?</summary>
+          <p>The festival is held annually every third week of January in Kalibo, Aklan.</p>
+        </details>
+        <details>
+          <summary>What does "Ati-Atihan" mean?</summary>
+          <p>"Ati-Atihan" means "to be like Atis," referring to the indigenous people of the Philippines.</p>
+        </details>
+        <details>
+          <summary>Can tourists join the street dancing?</summary>
+          <p>Yes! Visitors are welcome to join the fun and dance alongside performers in the parade.</p>
+        </details>
+      </article>
+    </section>
+
+    <section>
+      <h2>Contact Us</h2>
+      <article>
+        <form>
+          <label for="name">Your Name:</label><br>
+          <input type="text" id="name" name="name" required><br><br>
+
+          <label for="email">Your Email:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+          <button type="submit">Send</button>
+        </form>
+      </article>
+    </section>
+
+    <button id="back-to-top">Back to Top</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Philippine Festivals Guide. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Back to top button
+    const backToTop = document.getElementById("back-to-top");
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Prevent actual form submission
+    const form = document.querySelector("form");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      alert("Thank you! Your message has been recorded.");
+    });
+  </script>
+</body>
+</html>
