@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Places to Visit | Philippine Festivals Guide</title>
+  <meta name="description" content="Explore Philippine festival locations using our interactive map. Learn about the cities and provinces where the top 15 cultural festivals are celebrated.">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Places to Visit</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="credits.html">Credits</a></li>
+        <li><a href="travel-tips.html">Travel Tips</a></li>
+        <li><a href="places-to-visit.html" class="active">Places to Visit</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Festival Map of the Philippines</h2>
+      <article>
+        <p>
+          Festivals are spread across Luzon, Visayas, and Mindanao, showcasing the 
+          Philippines’ cultural diversity. Use this map to locate the major festivals 
+          and plan your travel route. Each marker represents a city or town where 
+          one of the 15 featured festivals is celebrated.
+        </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7137379.39323211!2d118.92912079477513!3d11.346782591157288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x324053215f87de63%3A0x784790ef7a29da57!2sPhilippines!5e0!3m2!1sen!2sph!4v1758288356434!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </article>
+    </section>
+
+    <section>
+      <h2>Notable Festival Locations</h2>
+      <article>
+        <h3>Cebu City – Sinulog Festival</h3>
+        <p>
+          A vibrant celebration in honor of the Sto. Niño, featuring street dances, 
+          fluvial processions, and grand parades.
+        </p>
+
+        <h3>Baguio City – Panagbenga Festival</h3>
+        <p>
+          Known as the Flower Festival, this event highlights floats decorated with 
+          fresh blooms and street performances that attract thousands of visitors.
+        </p>
+
+        <h3>Bacolod City – MassKara Festival</h3>
+        <p>
+          Famous for its colorful masks and lively street parties, Bacolod is known as 
+          the “City of Smiles.”
+        </p>
+
+        <h3>Kalibo, Aklan – Ati-Atihan Festival</h3>
+        <p>
+          A historic and spiritual festival where locals paint their faces black and 
+          dance in honor of the Santo Niño.
+        </p>
+      </article>
+    </section>
+
+    <!-- FAQs -->
+    <section>
+      <h2>Frequently Asked Questions</h2>
+      <article>
+        <details>
+          <summary>How can I use the festival map?</summary>
+          <p>The map highlights the locations of the 15 festivals across the Philippines. You can zoom in, click on the area, and plan your route from nearby airports or bus stations.</p>
+        </details>
+        <details>
+          <summary>Are these festival locations tourist-friendly?</summary>
+          <p>Yes, most festival areas are major cities or towns with hotels, restaurants, and transport options. Some rural festivals may require extra planning for travel and lodging.</p>
+        </details>
+        <details>
+          <summary>Can I attend multiple festivals in one trip?</summary>
+          <p>It’s possible if you plan carefully, since some festivals happen in the same month. For example, Sinulog, Dinagyang, and Ati-Atihan are all in January.</p>
+        </details>
+        <details>
+          <summary>Do I need to hire a guide?</summary>
+          <p>Not necessarily. Most festivals are easy to navigate, but hiring a local guide can give you insider tips, history, and access to hidden spots.</p>
+        </details>
+      </article>
+    </section>
+
+    <button id="back-to-top">Back to Top</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Philippine Festivals Guide. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    const backToTop = document.getElementById("back-to-top");
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
