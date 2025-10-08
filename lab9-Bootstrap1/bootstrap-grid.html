@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bootstrap 5.3 Grid Showcase with Colors</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #f2f5f9;
+      margin: 0;
+      padding-bottom: 60px;
+    }
+
+    header {
+      background: #ffffff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      color: #2f2fa2;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #6c757d;
+      font-size: 1rem;
+    }
+
+    .container {
+      margin-top: 40px;
+    }
+
+    section {
+      padding: 30px 20px;
+      border-radius: 12px;
+      margin-bottom: 40px;
+      color: #333;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    /* Background colors per section */
+    section:nth-child(1) {
+      background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    }
+    section:nth-child(2) {
+      background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+    }
+    section:nth-child(3) {
+      background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+    }
+    section:nth-child(4) {
+      background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+    }
+    section:nth-child(5) {
+      background: linear-gradient(135deg, #ede7f6, #d1c4e9);
+    }
+    section:nth-child(6) {
+      background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+    }
+    section:nth-child(7) {
+      background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+    }
+
+    .section-title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #3b3f5c;
+      border-bottom: 2px solid #2f2fa2;
+      display: inline-block;
+      margin-bottom: 25px;
+    }
+
+    .col-box {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      text-align: center;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .col-box:hover {
+      background: #f0f4ff;
+      transform: translateY(-5px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px 15px;
+      background: #2f2fa2;
+      color: #ffffff;
+      font-size: 0.95rem;
+      margin-top: 60px;
+    }
+
+    footer a {
+      color: #c5cae9;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    footer a:hover {
+      color: #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Bootstrap 5 Grid System Showcase</h1>
+    <p>Explore how grids adapt beautifully across screen sizes</p>
+  </header>
+
+  <div class="container">
+    <!-- Equal Columns -->
+    <section>
+      <div class="section-title">Equal Columns</div>
+      <div class="row g-3">
+        <div class="col"><div class="col-box">Column 1</div></div>
+        <div class="col"><div class="col-box">Column 2</div></div>
+        <div class="col"><div class="col-box">Column 3</div></div>
+      </div>
+    </section>
+
+    <!-- Custom Column Widths -->
+    <section>
+      <div class="section-title">Custom Column Widths</div>
+      <div class="row g-3">
+        <div class="col-12 col-md-4"><div class="col-box">col-md-4</div></div>
+        <div class="col-12 col-md-4"><div class="col-box">col-md-4</div></div>
+        <div class="col-12 col-md-4"><div class="col-box">col-md-4</div></div>
+      </div>
+    </section>
+
+    <!-- Gutters -->
+    <section>
+      <div class="section-title">Gutters (Spacing)</div>
+      <div class="row g-0 mb-3">
+        <div class="col-6"><div class="col-box">g-0</div></div>
+        <div class="col-6"><div class="col-box">g-0</div></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-6"><div class="col-box">g-4</div></div>
+        <div class="col-6"><div class="col-box">g-4</div></div>
+      </div>
+    </section>
+
+    <!-- Responsive -->
+    <section>
+      <div class="section-title">Responsive Layout</div>
+      <div class="row">
+        <div class="col-12 col-sm-8"><div class="col-box">col-sm-8</div></div>
+        <div class="col-12 col-sm-4"><div class="col-box">col-sm-4</div></div>
+      </div>
+    </section>
+
+    <!-- Auto Layout -->
+    <section>
+      <div class="section-title">Auto Layout Columns</div>
+      <div class="row">
+        <div class="col"><div class="col-box">Auto 1</div></div>
+        <div class="col"><div class="col-box">Auto 2</div></div>
+        <div class="col"><div class="col-box">Auto 3</div></div>
+      </div>
+    </section>
+
+    <!-- Nested -->
+    <section>
+      <div class="section-title">Nested Grid Example</div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="col-box mb-3">Parent (6)</div>
+          <div class="row">
+            <div class="col-6"><div class="col-box">Child 1</div></div>
+            <div class="col-6"><div class="col-box">Child 2</div></div>
+          </div>
+        </div>
+        <div class="col-md-6"><div class="col-box">Parent (6)</div></div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section>
+      <div class="section-title">Grid Features</div>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+        <div class="col"><div class="col-box">Fast</div></div>
+        <div class="col"><div class="col-box">Responsive</div></div>
+        <div class="col"><div class="col-box">Flexible</div></div>
+        <div class="col"><div class="col-box">Modern</div></div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Bootstrap Grid Showcase | Designed for educational use.</p>
+    <p><a href="https://getbootstrap.com/docs/5.3/layout/grid/" target="_blank">Learn more about Bootstrap Grid System</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

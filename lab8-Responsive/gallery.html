@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minions Character Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Fun cartoon-style look */
+    body {
+      font-family: "Comic Neue", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fffbea;
+      color: #1e3a8a;
+    }
+
+    /* Header styling */
+    header {
+      text-align: center;
+      background: linear-gradient(90deg, #facc15, #fbbf24);
+      color: #1e3a8a;
+      padding: 2rem 1rem;
+      border-bottom: 6px solid #1e40af;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+    }
+
+    /* Gallery layout */
+    .gallery {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      padding: 2rem;
+    }
+
+    /* Each figure (image + caption) */
+    figure {
+      background-color: #fffbeb;
+      border: 4px solid #facc15;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    figure:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    }
+
+    /* Hover effect for image */
+    figure img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      transition: transform 0.4s ease, filter 0.4s ease;
+    }
+
+    figure:hover img {
+      transform: scale(1.08);
+      filter: brightness(1.15);
+    }
+
+    /* Caption styles */
+    figcaption {
+      text-align: center;
+      background-color: #1e3a8a;
+      color: white;
+      padding: 0.75rem;
+      font-size: 1.1rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* Caption hover animation */
+    figure:hover figcaption {
+      background-color: #facc15;
+      color: #1e3a8a;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      background-color: #1e3a8a;
+      color: white;
+      padding: 1rem;
+      font-size: 0.95rem;
+      letter-spacing: 0.5px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      figcaption {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Minions Character Gallery</h1>
+    <p>Meet the funniest and most lovable characters from the Minions universe!</p>
+  </header>
+
+  <main>
+    <div class="gallery">
+      <figure>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcEo4nBeLPFVkIsztce92JVtiArMZfUtB7SQ&s" alt="Kevin">
+        <figcaption>Kevin</figcaption>
+      </figure>
+      <figure>
+        <img src="https://i.pinimg.com/564x/6f/40/83/6f40837bb03f467775a625a8ae130ba1.jpg" alt="Stuart">
+        <figcaption>Stuart</figcaption>
+      </figure>
+      <figure>
+        <img src="https://i.pinimg.com/736x/70/61/3e/70613e4a9fac437865d35ee2a458c991.jpg" alt="Bob">
+        <figcaption>Bob</figcaption>
+      </figure>
+      <figure>
+        <img src="https://static0.colliderimages.com/wordpress/wp-content/uploads/2025/01/despicable-me-s-gru-was-partially-inspired-by-this-james-bond-villain.jpg?w=1200&h=675&fit=crop" alt="Gru">
+        <figcaption>Gru</figcaption>
+      </figure>
+      <figure>
+        <img src="https://www.illumination.com/wp-content/uploads/2019/11/DM_lucy.png" alt="Lucy Wilde">
+        <figcaption>Lucy Wilde</figcaption>
+      </figure>
+      <figure>
+        <img src="https://static.wikitide.net/greatcharacterswiki/c/cb/Agnes.png" alt="Agnes">
+        <figcaption>Agnes</figcaption>
+      </figure>
+      <figure>
+        <img src="https://i.pinimg.com/564x/f6/f4/c8/f6f4c8c87c72a64d52fe873f6d94e0ee.jpg" alt="Edith">
+        <figcaption>Edith</figcaption>
+      </figure>
+      <figure>
+        <img src="https://static.wikitide.net/greatcharacterswiki/thumb/f/f9/Margo_Posing_%281%29.png/300px-Margo_Posing_%281%29.png" alt="Margo">
+        <figcaption>Margo</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Minions Character Gallery | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
