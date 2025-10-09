@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JAVA HEAVEN | Contact Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: #fdfcfb;
+      color: #3e2723;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      height: 55vh;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 10px;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    }
+
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: clamp(2.5em, 5vw, 4em);
+      margin: 0;
+    }
+
+    header p {
+      font-size: clamp(1em, 2vw, 1.3em);
+      margin-top: 10px;
+    }
+
+    nav {
+      background: #6d4c41;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      color: #fff8e1;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffcc80;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      font-family: 'Pacifico', cursive;
+      color: #5d4037;
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
+    .contact-info {
+      background: #fbe9e7;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      margin-bottom: 40px;
+    }
+
+    .contact-info p {
+      font-size: 1.1em;
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    .contact-form {
+      background: #fff8e1;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    label {
+      font-weight: bold;
+      color: #5d4037;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #d7ccc8;
+      border-radius: 8px;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 1em;
+      background: #fff;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    button {
+      background: #6d4c41;
+      color: #fff8e1;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #8d6e63;
+    }
+
+    .map {
+      margin-top: 40px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+    }
+
+    footer {
+      text-align: center;
+      background: #4e342e;
+      color: #fbe9e7;
+      padding: 20px 10px;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        height: 45vh;
+      }
+      form {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 2.3em;
+      }
+      header p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contact JAVA HEAVEN</h1>
+    <p>We’d love to hear from you ☕</p>
+  </header>
+
+  <nav>
+    <a href="homepage.html">Home</a>
+    <a href="aboutpage.html">About Us</a>
+    <a href="menupage.html">Menu</a>
+    <a href="gallerypage.html">Cafe Gallery</a>
+  </nav>
+
+  <div class="container">
+    <h2>Get in Touch</h2>
+
+    <div class="contact-info">
+      <p><b>📍 Address:</b> 123 Brew Street, Coffeeville</p>
+      <p><b>📧 Email:</b> hello@javaheaven.com</p>
+      <p><b>📞 Phone:</b> (02) 9876-5432</p>
+      <p><b>🕒 Hours:</b> Mon - Sun | 7:00am - 9:00pm</p>
+    </div>
+
+    <div class="contact-form">
+      <form action="#" method="post">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <div class="map">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.728174646501!2d120.98422177450006!3d14.604181677655877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca00e7e11f71%3A0x25c8e6f229de97f3!2sCoffee%20Shop!5e0!3m2!1sen!2sph!4v1709200000000!5m2!1sen!2sph"
+        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 JAVA HEAVEN. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
