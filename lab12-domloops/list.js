@@ -2,7 +2,7 @@ let fruits = ["Apple", "Banana", "Mango", "Orange", "Grapes", "Pineapple", "Wate
 
 function generateList() {
   const list = document.getElementById("fruit-list");
-  list.innerHTML = ""; // clear existing list
+  list.innerHTML = ""; 
 
   for (let i = 0; i < fruits.length; i++) {
     const li = document.createElement("li");
@@ -22,5 +22,5 @@ function addFruit() {
 
   fruits.push(newFruit);
   input.value = "";
-  generateList(); // refresh the list with new fruit added
+  generateList(); 
 }
