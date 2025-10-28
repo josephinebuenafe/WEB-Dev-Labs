@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Click Message</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #0d47a1;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #0d47a1;
+    }
+
+    button {
+      background-color: #1976d2;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #1565c0;
+      transform: scale(1.05);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 14px;
+      color: #0d47a1;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Activity 4: Button Click Message</h2>
+  <button onclick="showMessage()">Click Me</button>
+
+  <footer>© 2025 Web Development Lab</footer>
+
+  <script>
+    function showMessage() {
+      alert("Thanks for clicking!");
+    }
+  </script>
+
+</body>
+</html>

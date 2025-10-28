@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Event</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #f0f4ff, #dbe4ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: white;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 320px;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    input[type="text"] {
+      width: 90%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      transition: border-color 0.3s;
+    }
+
+    input[type="text"]:focus {
+      border-color: #4a6cf7;
+      outline: none;
+    }
+
+    button {
+      background-color: #4a6cf7;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #3856d4;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Activity 6: Form Event</h2>
+
+    <label for="name">Enter your name:</label>
+    <input type="text" id="name" placeholder="Your name">
+    <button onclick="showAlert()">Submit</button>
+  </div>
+
+  <script>
+    function showAlert() {
+      let name = document.getElementById("name").value.trim();
+      if (name === "") {
+        alert("Please enter your name first!");
+      } else {
+        alert("Thank you, " + name + "!");
+      }
+    }
+  </script>
+
+</body>
+</html>
