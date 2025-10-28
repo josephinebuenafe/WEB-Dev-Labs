@@ -173,7 +173,7 @@
   <div class="container">
     <h2>Our Menu</h2>
 
-    <!-- Frappes -->
+    <!-- Frappes Section -->
     <div class="menu-category">
       <h3>Frappes</h3>
       <ul>
@@ -198,7 +198,7 @@
       </ul>
     </div>
 
-    <!-- Black Coffee -->
+    <!-- Black Coffee Section-->
     <div class="menu-category">
       <h3>Black Coffee</h3>
       <ul>
@@ -223,7 +223,7 @@
       </ul>
     </div>
 
-    <!-- Pastries -->
+    <!-- Pastries Section -->
     <div class="menu-category">
       <h3>Pastries</h3>
       <ul>
@@ -247,32 +247,21 @@
         </li>
       </ul>
     </div>
-
-    <!-- Order Summary -->
-    <div id="summary">
-      <h3>Order Summary</h3>
-      <p id="order-list">No items added yet.</p>
-      <p id="total">Total: ₱0</p>
-      <p><strong>Payment Options:</strong> You can pay at the counter or through online payment.</p>
-    </div>
+  
+  <div id="summary">
+    <h3>Order Summary</h3>
+    <p id="order-list">No items added yet.</p>
+    <p id="total">Total: ₱0</p>
+    <p><strong>Payment Options:</strong> You can pay at the counter or through online payment.</p>
   </div>
+</div>
 
-  <footer>
-    <p>&copy; 2025 JAVA HEAVEN. All rights reserved.</p>
-  </footer>
+<footer>
+  <p>&copy; 2025 JAVA HEAVEN. All rights reserved.</p>
+</footer>
 
-  <script>
-    let orders = [];
-    let total = 0;
+<script src="menu.js"></script>
 
-    function addToOrder(item, price) {
-      alert("You ordered " + item + "!");
-      orders.push(item);
-      total += price;
-      document.getElementById("order-list").innerText = "You ordered: " + orders.join(", ");
-      document.getElementById("total").innerText = "Total: ₱" + total;
-    }
-  </script>
 
 </body>
 </html>
