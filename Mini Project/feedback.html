@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JAVA HEAVEN - Feedback</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: #fdfcfb;
+      color: #3e2723;
+    }
+
+    header {
+      background: url('https://findyourjax.com/wp-content/uploads/2024/12/istockphoto-1400194993-612x612-1.webp') no-repeat center center/cover;
+      height: 50vh;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 10px;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    }
+
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: clamp(2.5em, 5vw, 4em);
+      margin: 0;
+    }
+
+    header p {
+      font-size: clamp(1em, 2vw, 1.4em);
+      margin-top: 10px;
+    }
+
+    nav {
+      background: #6d4c41;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      color: #fff8e1;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffcc80;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    section h2 {
+      font-family: 'Pacifico', cursive;
+      color: #5d4037;
+      font-size: 2em;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    form {
+      background: #fbe9e7;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+    }
+
+    form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 600;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #d7ccc8;
+      border-radius: 6px;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 1em;
+    }
+
+    form button {
+      margin-top: 20px;
+      background: #ffcc80;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    form button:hover {
+      background: #ffb74d;
+    }
+
+    .success-message {
+      text-align: center;
+      color: green;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    .feedback-list {
+      margin-top: 30px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .feedback-list li {
+      background: #ffe082;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      color: #4e342e;
+      box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      background: #4e342e;
+      color: #fbe9e7;
+      padding: 20px 10px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 2.2em;
+      }
+
+      header p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>JAVA HEAVEN</h1>
+    <p>We Value Your Feedback ☕</p>
+  </header>
+
+  <nav>
+    <a href="homepage.html">Home</a>
+    <a href="aboutpage.html">About Us</a>
+    <a href="menupage.html">Menu</a>
+    <a href="contactpage.html">Contact</a>
+    <a href="feedback.html">Feedback</a>
+  </nav>
+
+  <div class="container">
+    <section id="feedback">
+      <h2>Feedback Form</h2>
+      <form id="feedbackForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com">
+
+        <label for="message">Feedback</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your feedback..."></textarea>
+
+        <button type="submit">Submit Feedback</button>
+        <p class="success-message" id="successMessage" style="display:none;">Thank you! Your feedback has been submitted.</p>
+      </form>
+
+      <ul class="feedback-list" id="feedbackList"></ul>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 JAVA HEAVEN. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const form = document.getElementById('feedbackForm');
+    const successMessage = document.getElementById('successMessage');
+    const feedbackList = document.getElementById('feedbackList');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      // Validate Name
+      if (name === '') {
+        alert('Please enter your name.');
+        return;
+      }
+
+      // Validate Email
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(email)) {
+        alert('Please enter a valid email address.');
+        return;
+      }
+
+      // Validate Message
+      if (message.length <= 5) {
+        alert('Feedback message must be longer than 5 characters.');
+        return;
+      }
+
+      // Append feedback to list
+      const li = document.createElement('li');
+      li.textContent = `${name} (${email}): ${message}`;
+      feedbackList.appendChild(li);
+
+      // Show success message
+      successMessage.style.display = 'block';
+
+      // Reset form fields
+      form.reset();
+
+      // Hide success message after 3 seconds
+      setTimeout(() => {
+        successMessage.style.display = 'none';
+      }, 3000);
+    });
+  </script>
+</body>
+</html>
